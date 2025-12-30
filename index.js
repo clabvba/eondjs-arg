@@ -12,17 +12,17 @@ const PROJECT_URL = process.env.PROJECT_URL || '';    // 需要上传订阅或�
 const AUTO_ACCESS = process.env.AUTO_ACCESS || false; // false关闭自动保活，true开启,需同时填写PROJECT_URL变量
 const FILE_PATH = process.env.FILE_PATH || './tmp';   // 运行目录,sub节点文件保存目录
 const SUB_PATH = process.env.SUB_PATH || 'ndsub';       // 订阅路径
-const PORT = process.env.SERVER_PORT || process.env.PORT || 6000;        // http服务订阅端口
-const UUID = process.env.UUID || '3287922d-0bfb-4847-92a3-17a8b7db02fb'; // 使用哪吒v1,在不同的平台运行需修改UUID,否则会覆盖
-const NEZHA_SERVER = process.env.NEZHA_SERVER || 'tta.wahaaz.xx.kg:80';        // 哪吒v1填写形式: nz.abc.com:8008  哪吒v0填写形式：nz.abc.com
+const PORT = process.env.SERVER_PORT || process.env.PORT || 5000;        // http服务订阅端口
+const UUID = process.env.UUID || '77226d2d-1210-459d-b7ae-9c3bb24e9cad'; // 使用哪吒v1,在不同的平台运行需修改UUID,否则会覆盖
+const NEZHA_SERVER = process.env.NEZHA_SERVER || 'nztt.wah.xx.kg:80';        // 哪吒v1填写形式: nz.abc.com:8008  哪吒v0填写形式：nz.abc.com
 const NEZHA_PORT = process.env.NEZHA_PORT || '';            // 使用哪吒v1请留空，哪吒v0需填写
-const NEZHA_KEY = process.env.NEZHA_KEY || 'OZMtCS6G39UpEgRvzRNXjS7iDNBRmTsI';              // 哪吒v1的NZ_CLIENT_SECRET或哪吒v0的agent密钥
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'koyede.nls.dpdns.org';          // 固定隧道域名,留空即启用临时隧道
-const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiNmIyMjM3YTI0YjJkNDFhZTM0MjMyYjkzNjhkZDNjMzciLCJ0IjoiZjlkNTk3MTktMDFhNi00YzdlLTkxNDctOTZlMGEyOGFkMzUwIiwicyI6Ik16RXpZbUkwWmpNdFpHSTJNQzAwWkdRMkxXRm1OVEl0WW1FellqaG1OelkzTkdJMiJ9';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
-const ARGO_PORT = process.env.ARGO_PORT || 8005;            // 固定隧道端口,使用token需在cloudflare后台设置和这里一致
+const NEZHA_KEY = process.env.NEZHA_KEY || 'JCkJVCG8rhvi8M28q0AN4bWbhrban8Mz';              // 哪吒v1的NZ_CLIENT_SECRET或哪吒v0的agent密钥
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'kxnzde.nls.dpdns.org';          // 固定隧道域名,留空即启用临时隧道
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiNmIyMjM3YTI0YjJkNDFhZTM0MjMyYjkzNjhkZDNjMzciLCJ0IjoiMDBkODhhMzktNGQ1Yi00MTU3LThkYzctM2JjMDk2MDFmNzk3IiwicyI6IlptTmlPVEZpT0dNdFlUUXdOaTAwWXpOaUxUaGhPV0V0T1dReVpHUmtZbUkwTkRJeCJ9';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
+const ARGO_PORT = process.env.ARGO_PORT || 8009;            // 固定隧道端口,使用token需在cloudflare后台设置和这里一致
 const CFIP = process.env.CFIP || 'cdns.doon.eu.org';        // 节点优选域名或优选ip  
 const CFPORT = process.env.CFPORT || 443;                   // 节点优选域名或优选ip对应的端口
-const NAME = process.env.NAME || 'koyde';                        // 节点名称
+const NAME = process.env.NAME || 'koyxiao';                        // 节点名称
 
 // 创建运行文件夹
 if (!fs.existsSync(FILE_PATH)) {
